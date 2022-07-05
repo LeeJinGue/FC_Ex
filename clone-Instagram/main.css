@@ -1,0 +1,133 @@
+.main-header{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 50px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+}
+
+.main-header .icon-logo{
+  width: 30vw;
+}
+
+/* 내 스토리 및 다른사람들 스토리 리스트 */
+.story-list{
+  margin-top: 50px;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  background-color: #FCFEFF;
+}
+/* 스토리 하나 */
+.story{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.story .story-img{
+  align-self: center;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  border: solid gray 2px;
+  width:50px
+}
+.story .story-name{
+  font-size: 10pt;
+}
+
+/* 새로운 스토리(아직 안본 스토리) 지정 */
+.story:nth-child(2) .story-img{
+  border: solid red 2px;
+}
+.story:nth-child(3) .story-img{
+  border: solid red 2px;
+}
+
+/* 게시글 상단 */
+.posting-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 0 10px 8px 10px;
+}
+/* 프로필 */
+.profile{
+  display: flex;
+  align-items: center;
+}
+.profile-img{
+  width: 30px;
+  border-radius: 100%;
+  margin-right: 5px;
+  border: solid gray 1px;
+}
+.profile-name{
+  font-weight:bolder;
+}
+
+.posting-img{
+  width: 100vw;
+}
+
+/* 좋아요, 댓글달기, DM보내기 등 */
+.posting-action{
+  padding:10px;
+  display: flex;
+  justify-content: space-between;
+}
+.posting-action .icon-like{
+  margin-left: 10px;
+}
+.posting-action .icon-comment{
+  margin-left: 10px;
+}
+.posting-action .icon-dm{
+  margin-left: 10px;
+}
+.posting-action .icon-favorite{
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+/* 좋아요 개수 */
+.posting-like{
+  padding-left: 10px;
+}
+.like-num{
+  font-weight: bold;
+}
+
+/* 댓글 */
+.posting-comments{
+  margin-top: 10px;
+  padding-left: 10px;
+}
+/* 포스팅 시간 */
+.posting-time{
+  font-size: 8px;
+  color: gray;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.posting{
+  margin-bottom: 40px;
+}
+.icons{
+  position:fixed;
+  background-color: white;
+  width: 100vw;
+  height: 30px;
+  display:flex;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  justify-content: space-around;
+}
